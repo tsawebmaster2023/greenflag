@@ -3,9 +3,9 @@ import logo from './logo.png';
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center p-5 bg-emerald-400">
-      <Link to="/" className="flex items-center text-white text-lg font-bold">
-        <img src={logo} alt="Logo" className="mr-2 h-6 w-auto" /> 
+    <nav className="flex justify-between items-center p-5 bg-emerald-500">
+      <Link to="/" className="flex items-center text-white text-lg font-semibold">
+        <img src={logo} alt="Logo" className="mr-2 h-16 w-16" /> 
         Green Flag Energy Solutions
       </Link>
       <ul className="flex space-x-4">
