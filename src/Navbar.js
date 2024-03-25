@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
+import logo from './logo.png';
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center p-5 bg-blue-500">
-      <Link to="/" className="text-white text-lg font-bold">
-        Site Name
+    <nav className="flex justify-between items-center p-5 bg-emerald-400">
+      <Link to="/" className="flex items-center text-white text-lg font-bold">
+        <img src={logo} alt="Logo" className="mr-2 h-6 w-auto" /> 
+        Green Flag Energy Solutions
       </Link>
       <ul className="flex space-x-4">
         <li>
