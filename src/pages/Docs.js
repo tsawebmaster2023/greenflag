@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { createClient } from 'contentful';
 
 const client = createClient({
-  space: 'ztycg7zubv77',
-  accessToken: 'jXIkkhBBOMAOFSpVKQm-UaV9f9vGl0mr6_EDggPfp3k'
+  space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
+  accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN,
 });
 
 export default function Docs() {
