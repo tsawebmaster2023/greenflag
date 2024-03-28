@@ -11,7 +11,7 @@ export default function Navbar() {
       <ul className="flex space-x-4">
         <li>
           <Link to="/about" className="text-white">
-            About Us
+            About
           </Link>
         </li>
         <li>
@@ -26,7 +26,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link to="/contact" className="text-white">
-            Contact Us
+            Contact
           </Link>
         </li>
       </ul>
