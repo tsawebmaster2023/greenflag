@@ -20,7 +20,7 @@ export default function Home() {
         <img src={greenPowerImage} alt="Green Power" className="w-1/2 mt-4 mx-4 sm:mx-6 md:mx-8 lg:mx-12"/>
       </div>
       <div id="detailSection" className="p-8 w-1/12">
-        <p>Pendu fanboy</p>
+        <p>Detail goes here</p>
       </div>
     </div>
   );
