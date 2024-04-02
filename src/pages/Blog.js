@@ -7,7 +7,7 @@ const client = createClient({
   accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN,
 });
 
-export default function Docs() {
+export default function Blog() {
   const [posts, setPosts] = useState(null);
   const [selectedPost, setSelectedPost] = useState(null);
 
@@ -35,9 +35,14 @@ export default function Docs() {
           h3: ({node, ...props}) => <h3 {...props} className="font-bold"/>,
           p: ({node, ...props}) => <p {...props} className="mb-4"/>,
         }}>{selectedPost.fields.body}</ReactMarkdown>
-        <ReactMarkdown components={{
-          a: ({node, ...props}) => <a {...props} style={{display: 'block', marginBottom: '10px'}}/>
-        }}>{selectedPost.fields.sources}</ReactMarkdown>
+        <div className="mt-4 mb-8">
+          <p className="font-semibold mb-2">These sources were used to create this blog post. For more specific information, visit them!</p>
+          {selectedPost.fields.sources.split(',').map((source, index) => (
+            <ReactMarkdown key={index} components={{
+              a: ({node, ...props}) => <a {...props} />
+            }}>{source.trim()}</ReactMarkdown>
+          ))}
+        </div>
       </div>
     );
   }

@@ -15,8 +15,8 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="/docs" className="text-white">
-            Docs
+          <Link to="/blog" className="text-white">
+            Blog
           </Link>
         </li>
         <li>
