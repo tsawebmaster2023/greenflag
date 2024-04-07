@@ -19,16 +19,16 @@ export default function Home() {
           <h2 className="text-2xl font-bold mb-4">Our Benefits</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-white rounded-lg p-4 shadow-md">
-              <h3 className="text-xl font-semibold mb-2">Tax Rebate Calculator</h3>
-              <p>Calculate potential tax rebates and incentives for adopting green energy solutions.</p>
+              <h3 className="text-xl font-semibold mb-2">Blog</h3>
+              <p>An informative and enriching blog about the benefits of environemental-friendliness for homewoners and businessowners alike.</p>
             </div>
             <div className="bg-white rounded-lg p-4 shadow-md">
-              <h3 className="text-xl font-semibold mb-2">Carbon Footprint Calculator</h3>
-              <p>Estimate your carbon footprint and explore ways to reduce it with our calculators.</p>
+              <h3 className="text-xl font-semibold mb-2">Green Energy Costs</h3>
+              <p>Locate green energy practices that fit your needs and financial constraints.</p>
             </div>
             <div className="bg-white rounded-lg p-4 shadow-md">
-              <h3 className="text-xl font-semibold mb-2">Other Homeowner Tools</h3>
-              <p>Access a range of tools and resources tailored to homeowners for sustainable living.</p>
+              <h3 className="text-xl font-semibold mb-2">Tax Credits</h3>
+              <p>Accurately find taxes tailored to your budget.</p>
             </div>
           </div>
         </div>
